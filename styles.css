@@ -8,3 +8,91 @@ red - #ee5253
 
 */
 
+*,
+*:before,
+*:after {
+    font-family: 'Roboto', sans-serif;
+}
+
+body    {
+    margin: 0px;
+}
+
+.navigation  {
+    background: #0fb9b1;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navigation > h1    {
+    font-size: 20px;
+}
+
+.navigation > button {
+    font-size: 15px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.central-display    {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+    gap: 150px;
+
+}
+
+.input-container  {
+    background: rgba(255, 255, 255, 0.9);
+    width: 500px;
+    height: 325px;
+    padding: 40px;
+}
+
+#input-header {
+    font-size: 25px;
+}
+
+.lets-cook-button   {
+    background: #0fb9b1;
+    padding: 5px;
+    width: 200px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.output-container {
+    background: rgba(255, 255, 255, 0.9);
+    width: 500px;
+    height: 325px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.crockpot-image {
+    max-height: 50%;
+    max-width: 50%;
+    width: auto;
+    height: auto;
+    position: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+
+
+
