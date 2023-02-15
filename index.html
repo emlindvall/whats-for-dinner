@@ -2,9 +2,41 @@
   <head>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>What's for Dinner?</title>
   </head>
   <body>
-    
+    <style>
+      body {
+        background-image: url('https://raw.githubusercontent.com/emlindvall/whats-for-dinner/main/assets/burger-friends.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+        <nav class="nav-bar">
+          <header>
+            <h1>What's for Dinner?</h1>
+          </header>
+          <button class="add-recipe-button" type= "button">ADD A RECIPE</button>
+      </nav>
+    <article class="input-container">
+      <h1>What are you looking for?*</h1>
+      <input type="radio" id="side-radio" name="side-radio" value="side">
+      <label for="side-radio">Side</label><br>
+      <input type="radio" id="main-radio" name="main-radio" value="main">
+      <label for="main-radio">Main Dish</label><br>
+      <input type="radio" id="dessert-radio" name="dessert-radio" value="dessert">
+      <label for="dessert-radio">Dessert</label><br>
+      <input type="radio" id="meal-radio" name="meal-radio" value="meal">
+      <label for="meal-radio">Entire Meal</label><br><br>
+      <button class="lets-cook-button" type="button">LET'S COOK!</button>
+    </article>
+    <article class="output-container">
+      <img class="crockpot-image" 
+      src="https://raw.githubusercontent.com/emlindvall/whats-for-dinner/c0306412f5a0f723154ee8aea09191078d45869d/assets/cookpot.svg" 
+      alt="Vector image of a crockpot"
+      width="150px" height="150px">
+    </article>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
