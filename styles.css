@@ -48,14 +48,14 @@ body    {
 }
 
 .input-container  {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     width: 500px;
     height: 325px;
     padding: 40px;
 }
 
 #input-header {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .lets-cook-button   {
@@ -69,7 +69,7 @@ body    {
 }
 
 .output-container {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     width: 500px;
     height: 325px;
     padding: 40px;
