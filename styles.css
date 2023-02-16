@@ -27,12 +27,14 @@ body    {
     padding: 20px;
 }
 
-.navigation > h1    {
+.whats-for-dinner-header    {
     font-size: 20px;
 }
 
-.navigation > button {
+.navigation > button    {
     font-size: 15px;
+    width: 125px;
+    height: 35px;
     padding: 5px;
     border: 0px;
     border-radius: 5px;
@@ -43,7 +45,7 @@ body    {
     align-items: flex-start;
     justify-content: center;
     padding: 50px;
-    gap: 150px;
+    gap: 300px;
 
 }
 

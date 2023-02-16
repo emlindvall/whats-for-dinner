@@ -1,6 +1,4 @@
 <html>
-
-
   <head>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -18,13 +16,13 @@
       }
     </style>
     <section class="navigation">
-      <h1>What's for Dinner?</h1>
+      <h1 class="whats-for-dinner-header">What's for Dinner?</h1>
       <button class="add-recipe-button" type= "button">ADD A RECIPE</button>
     </section>
 
     <section class="central-display">
       <article class="input-container">
-          <div contenteditable="true" id="input-header">
+          <div id="input-header">
             What are you looking for?<span style="color: red">*</span><br><br>
           </div>
               <input type="radio" id="side-radio" name="side-radio" value="side">
@@ -37,15 +35,23 @@
               <label for="meal-radio">Entire Meal</label><br><br>
           <button class="lets-cook-button" type="button">LET'S COOK!</button>
       </article>
+
       <article class="output-container">
             <img class="crockpot-image" 
-              src="https://raw.githubusercontent.com/emlindvall/whats-for-dinner/c0306412f5a0f723154ee8aea09191078d45869d/assets/cookpot.svg" 
-              alt="Vector image of a crockpot"
-              width="150px" height="150px">
-      </article>
-  </section>
+                src="https://raw.githubusercontent.com/emlindvall/whats-for-dinner/c0306412f5a0f723154ee8aea09191078d45869d/assets/cookpot.svg" 
+                alt="Vector image of a crockpot"
+                width="150px" height="150px">
+            </img>
 
-    <!-- </body>
-  </body> -->
+            <section class="recipe-container">
+              <p class="you-should-make">You should make:</p>
+              <p class="recipe-name">Placeholder!</p>
+            </section>
+
+            <button class="clear-button" type="button">CLEAR</button>
+      </article>
+
+
+  </section>
   <script type="text/javascript" src="main.js"></script>
 </html>
