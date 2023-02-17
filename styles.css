@@ -50,16 +50,22 @@ body    {
 }
 
 .input-container  {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
     background: rgba(255, 255, 255, 0.8);
     width: 500px;
     height: 325px;
     padding: 25px;
-    align-items: center;
-    justify-content: space-around;
 }
 
 #input-header {
     font-size: 30px;
+}
+
+fieldset  {
+   border: 0;
 }
 
 .lets-cook-button   {
@@ -73,32 +79,28 @@ body    {
 }
 
 .output-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
     background: rgba(255, 255, 255, 0.8);
     width: 500px;
     height: 325px;
     padding: 25px;
+}
+
+.multipurpose-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
-
-
-
 
 .crockpot-image {
-    max-height: 20%;
-    max-width: 20%;
-    position: absolute;
-    width: auto;
-    height: auto;
     margin: 0px;
-}
-
-.recipe-container   {
-    padding: 125px;
-    visibility: hidden;
-    position: absolute;
+    visibility: visible;
 }
 
 .you-should-make  {
@@ -110,12 +112,14 @@ body    {
 
 .recipe-name  {
     text-align: center;
+    text-size-adjust: auto;
     font-size: 40px;
     font-weight: bold;
     margin: 0px;
 }
 
 .clear-button   {
+    position: fixed;
     background: #95a5a6;
     font-size: 15px;
     color: #ffffff;
@@ -124,8 +128,7 @@ body    {
     padding: 5px;
     border: 0px;
     border-radius: 5px;
-    margin: 265px 25px 0px 415px;
-    
+    visibility: hidden;
 }
 
 
