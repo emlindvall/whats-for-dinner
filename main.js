@@ -55,6 +55,7 @@ var desserts = [
     "Eclairs"
 ]
 
+var randomRecipe = "";
 
 letsCookButton.addEventListener('click', getRandomRecipe);
 clearButton.addEventListener('click', clearRandomRecipe);
@@ -72,43 +73,31 @@ function getRandomRecipe()  {
         if (buttonOptions[i].checked)   {
                 var mealChoice = (buttonOptions[i].value);
         }
+    } if (mealChoice === "side" || "main" || "dessert")  {
+        randomRecipe = sides[getRandomIndex(sides)];
+        updateRecipeHTML();
+    } if (mealChoice === "meal") {
+        updateMealHTML();
     }
-    if (mealChoice === "side")  {
-        multipurposeContainer.innerHTML = `
-            <article class="recipe">
-                <p class="you-should-make">You should make:</p>
-                <p class="recipe-name">${sides[getRandomIndex(sides)]}</p>
-            </article>
-        `
-        var toggleLetsCook = true;
-    }
-    if (mealChoice === "main") {
-        multipurposeContainer.innerHTML = `
+    var toggleLetsCook = true;
+}
+
+function updateRecipeHTML() {
+    multipurposeContainer.innerHTML = `
         <article class="recipe">
             <p class="you-should-make">You should make:</p>
-            <p class="recipe-name">${mains[getRandomIndex(mains)]}</p>
+            <p class="recipe-name">${randomRecipe}</p>
         </article>
         `
-        var toggleLetsCook = true;
-    }
-    if (mealChoice === "dessert") {
-        multipurposeContainer.innerHTML = `
-        <article class="recipe">
-            <p class="you-should-make">You should make:</p>
-            <p class="recipe-name">${desserts[getRandomIndex(desserts)]}</p>
-        </article>
-        `
-        var toggleLetsCook = true;
-    }
-    if (mealChoice === "meal") {
-        multipurposeContainer.innerHTML = `
+}
+
+function updateMealHTML()   {
+    multipurposeContainer.innerHTML = `
         <article class="recipe">
             <p class="you-should-make">You should make:</p>
             <p class="recipe-name"><font size ="5">${mains[getRandomIndex(mains)]} with a side of ${sides[getRandomIndex(sides)]} and ${desserts[getRandomIndex(desserts)]} for dessert!</font></p>
         </article>
         `
-        var toggleLetsCook = true;
-    }
 }
 
 function clearRandomRecipe()    {
