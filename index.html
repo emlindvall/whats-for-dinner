@@ -6,6 +6,7 @@
   </head>
 
 
+
   <body>
     <style>
       body {
@@ -17,39 +18,51 @@
     </style>
     <section class="navigation">
       <h1 class="whats-for-dinner-header">What's for Dinner?</h1>
-      <button class="add-recipe-button" type= "button">ADD A RECIPE</button>
+      <!-- <button class="add-recipe-button" type= "button">ADD A RECIPE</button> -->
     </section>
 
+
+
     <section class="central-display">
-      <article class="input-container">
+
+      <section class="input-container">
           <div id="input-header">
             What are you looking for?<span style="color: red">*</span><br><br>
           </div>
-              <input type="radio" id="side-radio" name="side-radio" value="side">
-              <label for="side-radio">Side</label><br><br>
-              <input type="radio" id="main-radio" name="main-radio" value="main">
-              <label for="main-radio">Main Dish</label><br><br>
-              <input type="radio" id="dessert-radio" name="dessert-radio" value="dessert">
-              <label for="dessert-radio">Dessert</label><br><br>
-              <input type="radio" id="meal-radio" name="meal-radio" value="meal">
-              <label for="meal-radio">Entire Meal</label><br><br>
+
+          <form>
+            <fieldset>
+              <div id ="radio-buttons">
+                <input type="radio" id="side-radio" name="radio" value="side">
+                <label for="side-radio">Side</label><br><br>
+                <input type="radio" id="main-radio" name="radio" value="main">
+                <label for="main-radio">Main Dish</label><br><br>
+                <input type="radio" id="dessert-radio" name="radio" value="dessert">
+                <label for="dessert-radio">Dessert</label><br><br>
+                <input type="radio" id="meal-radio" name="radio" value="meal">
+                <label for="meal-radio">Entire Meal</label><br><br>
+              </div> 
+              </fieldset>
+          </form>
+      
+
+
           <button class="lets-cook-button" type="button">LET'S COOK!</button>
-      </article>
+        </section>
 
-      <article class="output-container">
-            <img class="crockpot-image" 
-                src="https://raw.githubusercontent.com/emlindvall/whats-for-dinner/c0306412f5a0f723154ee8aea09191078d45869d/assets/cookpot.svg" 
-                alt="Vector image of a crockpot"
-                width="150px" height="150px">
-            </img>
+      <section class="output-container">
+        <button class="clear-button" type="button">CLEAR</button>
+        <div class="multipurpose-container">
+          <img class="crockpot-image" 
+              src="https://raw.githubusercontent.com/emlindvall/whats-for-dinner/c0306412f5a0f723154ee8aea09191078d45869d/assets/cookpot.svg" 
+              alt="Vector image of a crockpot"
+              width="175px" height="175px">
+          </img>
+        <div class="recipe-container">
+        </section>
+        </article>
+      </section>
 
-            <section class="recipe-container">
-              <p class="you-should-make">You should make:</p>
-              <p class="recipe-name">Placeholder!</p>
-            </section>
-
-            <button class="clear-button" type="button">CLEAR</button>
-      </article>
 
 
   </section>
