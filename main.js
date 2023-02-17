@@ -1,14 +1,7 @@
 var letsCookButton = document.querySelector('.lets-cook-button');
 var clearButton = document.querySelector('.clear-button');
 var radioButtons = document.querySelector('.radio-buttons');
-
-// var selectSide = document.querySelector('#side-radio');
-// var selectMain = document.querySelector('#main-radio');
-// var selectDessert = document.querySelector('#dessert-radio');
-// var selectMeal = document.querySelector('#meal-radio');
-
 var multipurposeContainer = document.querySelector('.multipurpose-container');
-
 var crockpotImage = document.querySelector('.crockpot-image');
 
 
@@ -61,8 +54,6 @@ var desserts = [
     "Croissants",
     "Eclairs"
 ]
-
-
 
 
 letsCookButton.addEventListener('click', getRandomRecipe);
@@ -119,7 +110,6 @@ function getRandomRecipe()  {
         var toggleLetsCook = true;
     }
 }
-
 
 function clearRandomRecipe()    {
     clearButton.style.visibility = "hidden";
