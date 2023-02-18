@@ -71,7 +71,7 @@ function getRandomRecipe()  {
     for (var i = 0; i < buttonOptions.length; i++)  {
         if (buttonOptions[i].checked)   {
                 var mealChoice = (buttonOptions[i].value);
-        }
+        } 
     }
     if (mealChoice === "sides")  {
         clearButton.style.visibility= "visible";
@@ -87,8 +87,13 @@ function getRandomRecipe()  {
         updateRecipeHTML();
     } if (mealChoice === "meals")    {
         clearButton.style.visibility= "visible";
-        updateMealHTML();
+        updateMealHTML(); 
+    } if (mealChoice === undefined) {
+        multipurposeContainer.innerHTML = `
+        <p>It looks like you forgot to make a selection. Try again?</>
+        `
     }
+    console.log(mealChoice);
     toggleLetsCook = true;
 }
 
