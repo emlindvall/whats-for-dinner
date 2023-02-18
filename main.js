@@ -89,9 +89,7 @@ function getRandomRecipe()  {
         clearButton.style.visibility= "visible";
         updateMealHTML(); 
     } if (mealChoice === undefined) {
-        multipurposeContainer.innerHTML = `
-        <p>It looks like you forgot to make a selection. Try again?</>
-        `
+        errorMessageHTML();
     }
     console.log(mealChoice);
     toggleLetsCook = true;
