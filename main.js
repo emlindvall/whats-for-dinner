@@ -67,19 +67,29 @@ function getRandomIndex(array) {
 
 function getRandomRecipe()  {
     var toggleLetsCook = false;
-    clearButton.style.visibility= "visible";
     var buttonOptions = document.getElementsByName("radio");
     for (var i = 0; i < buttonOptions.length; i++)  {
         if (buttonOptions[i].checked)   {
                 var mealChoice = (buttonOptions[i].value);
         }
-    } if (mealChoice === "side" || "main" || "dessert")  {
+    }
+    if (mealChoice === "sides")  {
+        clearButton.style.visibility= "visible";
         randomRecipe = sides[getRandomIndex(sides)];
         updateRecipeHTML();
-    } if (mealChoice === "meal") {
+    } if (mealChoice ===  "mains")  {
+        clearButton.style.visibility= "visible";
+        randomRecipe = mains[getRandomIndex(mains)];
+        updateRecipeHTML();
+    } if (mealChoice ===  "desserts")  {
+        clearButton.style.visibility= "visible";
+        randomRecipe = desserts[getRandomIndex(desserts)];
+        updateRecipeHTML();
+    } if (mealChoice === "meals")    {
+        clearButton.style.visibility= "visible";
         updateMealHTML();
     }
-    var toggleLetsCook = true;
+    toggleLetsCook = true;
 }
 
 function updateRecipeHTML() {
@@ -100,7 +110,17 @@ function updateMealHTML()   {
         `
 }
 
+function errorMessageHTML() {
+    multipurposeContainer.innerHTML = `
+    <p>It looks like you didn't make a selection. Try again?</p>
+    `;
+}
+
 function clearRandomRecipe()    {
+    var buttonOptions = document.getElementsByName("radio");
+    for (var i = 0; i < buttonOptions.length; i++)  {
+        buttonOptions[i].checked = false;
+         }
     clearButton.style.visibility = "hidden";
     multipurposeContainer.innerHTML = `
         <img class="crockpot-image" 
