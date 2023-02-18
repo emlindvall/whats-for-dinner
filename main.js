@@ -77,18 +77,18 @@ function getRandomRecipe()  {
         clearButton.style.visibility= "visible";
         randomRecipe = sides[getRandomIndex(sides)];
         updateRecipeHTML();
-    } if (mealChoice ===  "mains")  {
+    } else if (mealChoice ===  "mains")  {
         clearButton.style.visibility= "visible";
         randomRecipe = mains[getRandomIndex(mains)];
         updateRecipeHTML();
-    } if (mealChoice ===  "desserts")  {
+    } else if (mealChoice ===  "desserts")  {
         clearButton.style.visibility= "visible";
         randomRecipe = desserts[getRandomIndex(desserts)];
         updateRecipeHTML();
-    } if (mealChoice === "meals")    {
+    } else if (mealChoice === "meals")    {
         clearButton.style.visibility= "visible";
         updateMealHTML(); 
-    } if (mealChoice === undefined) {
+    } else {
         errorMessageHTML();
     }
     console.log(mealChoice);
