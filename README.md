@@ -1,51 +1,22 @@
-# What's for Dinner?
-
-## Overview
-
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
-
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
-
-______________________________________________________  
-# README Template  
-Before turning this project in, erase this line and everything above it and fill in the info below.  
-______________________________________________________  
-
 # What's for Dinner? 
 
 ### Abstract:
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+We all hate the question *"What do you want for dinner?"*, and we all hate the answer *"I don't know, what do you want?"* even more. The "What's For Dinner?" application helps solve that problem by allowing users to generate random recipe ideas based on the selection of categories of side dish, main dish, dessert, or entire meal. To begin constructing this application, I started with blank HTML, CSS, and JavaScript files, and added functionality based in part off of a screenshot of the application's desired design and in part off of a description of the application's desired functionality. 
 
 ### Installation Instructions:
-[//]: <> (What steps does a person have to take to get your app cloned down and running?)
+To get started using the "What's for Dinner?" application, please fork this repository and clone it down to the desired location on your local machine. After navigating to the directory in your terminal, open it in a code reader like Visual Studio Code. Select the index.html file from the left-hand explorer menu and use terminal command `open index.html` to open the application in your browser. At this time, the "What's for Dinner?" application only works locally. 
 
 ### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+![What's for Dinner GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzBhYWI3ZDM4YjY0Njk1MDc1MDc4MzhjNjA1NDlhZDZkYTU2YmRhOCZjdD1n/Q3guXl3KAw44CAuN0j/giphy.gif)
 
 ### Context:
-[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+This application was created over the course of five days, during my time as a student at the Turing School of Software and Design. When I built it, I was three weeks into the program. 
 
 ### Contributors:
-[//]: <> (Who worked on this application? Link to their GitHubs.)
+The "What's for Dinner?" application was created solo by [Em Lindvall](https://github.com/emlindvall).
 
 ### Learning Goals:
-[//]: <> (What were the learning goals of this project? What tech did you work with?)
+Over the course of this project, my primary goal was to tie together my knowledge of JavsScript, HTML, and CSS into one cohesive, functioning application. My secondary goal was to establish better git workflow habits to better track changes throughout the coding process. 
 
 ### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+I'm very proud of the outcome for this project. I researched, learned about, and implemented a lot of features that were completely new to me-- flex box CSS, HTML radio buttons, and HTML span styling being the three that stand out most readily. My biggest hurdle with this project was understanding radio buttons, how to access their values, and how to clear them after selection. I used a combination of MDN and Stack Overflow to see examples of this funcationality in action and extrapolate in how to apply it to my own project. 
