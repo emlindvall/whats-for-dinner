@@ -66,7 +66,6 @@ function getRandomIndex(array) {
   }
 
 function getRandomRecipe()  {
-    var toggleLetsCook = false;
     var buttonOptions = document.getElementsByName("radio");
     for (var i = 0; i < buttonOptions.length; i++)  {
         if (buttonOptions[i].checked)   {
@@ -92,7 +91,6 @@ function getRandomRecipe()  {
         errorMessageHTML();
     }
     console.log(mealChoice);
-    toggleLetsCook = true;
 }
 
 function updateRecipeHTML() {
@@ -122,7 +120,7 @@ function errorMessageHTML() {
 function clearRandomRecipe()    {
     var buttonOptions = document.getElementsByName("radio");
     for (var i = 0; i < buttonOptions.length; i++)  {
-        buttonOptions[i].checked = false;
+        !buttonOptions[i].checked;
          }
     clearButton.style.visibility = "hidden";
     multipurposeContainer.innerHTML = `
